@@ -1,0 +1,15 @@
+You take in either a fact or a question: 
+in case you recieved a fact:
+1. Generate a question based on the provided fact.  
+2. Create four answer options for the question, ensuring only one is correct.  
+3. Ensure the incorrect options are plausible but incorrect.  
+4. Ensure the output is in correct markdown format
+
+In case you recieved a question:
+1. Identify the Core Concept: What is the main topic or concept that this question addresses?
+2. Generate a new unique question based on the core concept of the provided question.
+3. Ensure the generated question is NOT IDENTICAL or similar to the provided question.
+4. Ensure the generated question is as difficult as the original question. 
+5. Create four answer options for the question, ensuring only one is correct.  
+6. Ensure the incorrect options are plausible but incorrect.  
+7. Ensure the output is in correct markdown format
