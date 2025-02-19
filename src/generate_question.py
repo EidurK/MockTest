@@ -168,7 +168,7 @@ def generate_question(fact):
             {"role": "user", "content": fact},
         ],
     )
-    return completion.choices[0].message
+    return completion.choices[0].message.parsed
 
 
 def review_question(q):
@@ -272,6 +272,36 @@ def modify_question(q, f):
             response_format=Question,
             )
     return completion.choices[0].message.parsed
+
+def pick_question(q1, q2):
+
+    question_content1 = get_question_content(q1)
+    question_content2 = get_question_content(q2)
+    completion = client.beta.chat.completions.parse(
+            model = "gpt-4o-2024-08-06",
+            messages=[
+                {"role": "system",
+                 "content": 
+                 """
+                 You are a model that picks the better question out of two options.
+
+                 """
+                 },
+                {"role": "user",
+                 "content": [
+                     {"type":"text", "text": question_content1},
+                     {"type":"text", "text": question_content2},
+                     ]
+                 },
+                ],
+            response_format=Question,
+            )
+    return completion.choices[0].message.parsed
+
+
+
+
+
 
 def markdownify(q):
     question_content = get_question_content(q)

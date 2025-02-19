@@ -1,13 +1,19 @@
 # Fact
 
-Consider a relation 𝑅(𝐴, 𝐵, 𝐶, 𝐷, 𝐸) and a collection of functional
-dependencies (FD’s) 𝐹 = {𝐵 → 𝐸, 𝐵 → 𝐴, 𝐶𝐸 → 𝐵, 𝐶 → 𝐷}
-What are all the candidate keys of 𝑅?
+What is the output of the following code snippet
+x = 39
+print(x//2)
 
 # Question
-Given a relation $R(A, B, C, D, E)$ with the functional dependencies $F = \{B \to A, B \to C, DE \to B, D \to E\}$, which of the following options represent candidate key(s) for the relation $R$? Select and justify why each option could or could not be a candidate key.
+In Python, what operator is used to perform floor division, which is defined as obtaining the largest integer less than or equal to the division of two numbers? Consider the following code snippet:
+```python
+a = 15
+b = 4
+result = a // b
+```
+What will be the result of the floor division operation?
 
-- [ ] DE (DE can determine B, A, C, and E, therefore it covers all attributes, making it a candidate key).
-- [ ] BD (BD cannot determine all other attributes, thus it is not a candidate key).
-- [ ] BE (BE cannot determine D, hence it fails to cover all attributes and is not a candidate key).
-- [ ] BDE (BDE trivially determines all attributes, but it is not minimal as DE alone is sufficient).
+- [ ] `//` - The double forward-slash operator in Python returns 3 for the floor division of 15 by 4.
+- [ ] `%` - The percent operator returns the remainder and is incorrect for floor division; the result is not 3.
+- [ ] `/` - The single forward-slash operator performs true division and is incorrect for floor division; the result is not 3.
+- [ ] `**` - The two asterisks operator is for exponentiation, not division; it is incorrect in this context.

@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Model1.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -189,10 +189,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b3b1d2a9746df54b",
+  "active": "8aedc22dcdb3a81e",
   "lastOpenFiles": [
-    "Model1.md",
     "Model2.md",
+    "Model1.md",
     "Welcome.md"
   ]
 }

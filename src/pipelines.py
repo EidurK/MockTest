@@ -5,7 +5,7 @@ from rich.markdown import Markdown
 import random
 
 # Import the necessary components from the original file
-from generate_question import generate_question_answer,generate_question, review_question, modify_question,get_question_content_fancy, get_question_content, get_feedback_content, markdownify
+from generate_question import generate_question_answers, generate_question, review_question, modify_question,get_question_content_fancy, get_question_content, get_feedback_content, markdownify, pick_question
 from reader import read_facts
 from Feedback import Feedback
 
@@ -22,14 +22,14 @@ def get_pipeline_string(fact, pipeline):
 
 # Generate a question using the selected fact
 def pipeline_basic(fact):
-    question = generate_question_answer(fact)
+    question = generate_question_answers(fact)
     feedback = review_question(question)
     modified_question = modify_question(question, feedback)
     final_question = markdownify(modified_question)
     return final_question
 
 def pipeline_difficult(fact):
-    question = generate_question_answer(fact)
+    question = generate_question_answers(fact)
     feedback = review_question(question)
     feedback.add_feedback("Make the question harder.")
     feedback.add_feedback("The question is not detailed enough.")
@@ -37,22 +37,32 @@ def pipeline_difficult(fact):
     final_question = markdownify(modified_question)
     return final_question
 
-def pipeline_degree_2(fact):
-    question = generate_question_answer(fact)
-
+def pipeline_difficult_2(fact):
+    question = generate_question_answers(fact)
     feedback = review_question(question)
+    feedback.add_feedback("Make the question harder.")
+    feedback.add_feedback("The question is not detailed enough.")
     question = modify_question(question, feedback)
-
     feedback = review_question(question)
+    feedback.add_feedback("Make the question harder.")
+    feedback.add_feedback("The question is not detailed enough.")
     question = modify_question(question, feedback)
+    final_question = markdownify(question)
+    return final_question
 
+def pipeline_longer(fact):
+    question = generate_question_answers(fact)
+    feedback = review_question(question)
+    feedback.add_feedback("Make the question longer.")
+    feedback.add_feedback("The question is not detailed enough.")
+    question = modify_question(question, feedback)
     final_question = markdownify(question)
     return final_question
 
 def pipeline_generate_x3(fact):
-    question = generate_question_answer(fact)
-    question = generate_question_answer(get_question_content(question))
-    question = generate_question_answer(get_question_content(question))
+    question = generate_question_answers(fact)
+    question = generate_question_answers(get_question_content(question))
+    question = generate_question_answers(get_question_content(question))
 
     feedback = review_question(question)
     feedback.add_feedback("Make the question harder.")
@@ -62,22 +72,27 @@ def pipeline_generate_x3(fact):
     final_question = markdownify(question)
     return final_question
 
-def pipeline_simple(fact):
-    question = generate_question(fact)
-    question = generate_question_answer(question)
+def pipeline_two_questions(fact):
+    question1 = generate_question_answers(fact)
+    question2 = generate_question_answers(fact)
+    question = pick_question(question1, question2)
     feedback = review_question(question)
+    feedback.add_feedback("Make the question harder.")
+    feedback.add_feedback("The question is not detailed enough.")
     question = modify_question(question, feedback)
     final_question = markdownify(question)
     return final_question
 
 
+
+
 def pipeline_question_only(fact):
-    question = generate_question_answer(fact)
-    for i in range(3):
+    question = generate_question_answers(fact)
+    for i in range(2):
         feedback = review_question(question)
         feedback.add_feedback("The question is not detailed enough.")
         question = modify_question(question, feedback)
-        question = generate_question_answer(question.question)
+        question = generate_question_answers(question.question)
     final_question = markdownify(question)
     return final_question
 
@@ -90,7 +105,7 @@ def write_to_file(string1, string2, filepath):
         file.write('# Question\n'+string2)
 
 files = ['../Obsidian vault/Model1.md', '../Obsidian vault/Model2.md']
-pipelines = [pipeline_generate_x3, pipeline_degree_2,  pipeline_difficult, pipeline_question_only, pipeline_simple]
+pipelines = [  pipeline_difficult, pipeline_two_questions]
 random.shuffle(pipelines)
 
 print(pipelines[0].__name__, " -> ", files[0])
