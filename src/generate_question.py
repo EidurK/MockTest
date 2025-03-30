@@ -10,7 +10,6 @@ from Feedback import Feedback
 #------------------------------
 system_prompt = ""
 client = OpenAI()
-
 #------------------------------
 
 def get_question_content_fancy(q):

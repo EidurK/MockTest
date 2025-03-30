@@ -1,0 +1,17 @@
+<div class="card">
+    <div class="card-body">
+    <h5 class="card-title">Question {{ number }}</h5>
+    <p class="card-text">{{ question }}</p>
+      {% for i in range(options|length) %}
+      <div class="form-check {% if i == correct-1 %}correct{% elif i == selected-1 and i != correct-1 %}incorrect{% endif %}">
+        <input class="form-check-input" type="radio" name="answer_{{ number }}" id="{{ i }}" {% if i == selected-1 %}checked{% endif %} disabled>
+        <label class="form-check-label" for="{{ i }}">
+          {{ options[i] }}
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="card-body">
+      <p>{{ feedback }}</p>
+    </div>
+</div>

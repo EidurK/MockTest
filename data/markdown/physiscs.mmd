@@ -1,0 +1,270 @@
+Now let us consider a rotating rigid object, such as a wheel rotating about a fixed axis (an axle) through its center. We can think of the wheel as consisting of many particles located at various distances from the axis of rotation. We can apply Eq. 8-11 to each particle of the object, and then sum over all the particles. The sum of the various torques is the net torque, $\Sigma \tau$, so we obtain:
+$$\Sigma \tau=\left(\Sigma m r^{2}\right) \alpha$$
+where we factored out $\alpha$ because it is the same for all the particles of a rigid object. The sum $\Sigma m r^{2}$ represents the sum of the masses of each particle in the object multiplied by the square of the distance of that particle from the axis of rotation. If we assign each particle a number $(1,2,3, \ldots)$, then $\Sigma m r^{2}=$ $m_{1} r_{1}^{2}+m_{2} r_{2}^{2}+m_{3} r_{3}^{2}+\cdots$. This sum is called the moment of inertia (or rotational inertia) $I$ of the object:
+$$I=\Sigma m r^{2}=m_{1} r_{1}^{2}+m_{2} r_{2}^{2}+\cdots .$$
+
+Combining Eqs. 8-12 and 8-13, we can write
+$$\Sigma \tau=I \alpha$$
+
+This is the rotational equivalent of Newton's second law. It is valid for the rotation of a rigid object about a fixed axis. [It is also valid when the object is rotating while translating with acceleration, as long as $I$ and $\alpha$ are calculated about the center of mass of the object, and the rotation axis through the CM doesn't change direction. A ball rolling down a ramp is an example.]
+
+We see that the moment of inertia, $I$, which is a measure of the rotational inertia of an object, plays the same role for rotational motion that mass does for translational motion. As can be seen from Eq. 8-13, the rotational inertia of a rigid object depends not only on its mass, but also on how that mass is distributed with respect to the axis. For example, a large-diameter cylinder will have greater rotational inertia than one of equal mass but smaller diameter, Fig. 8-18. The former will be harder to start rotating, and harder to stop. When the mass is concentrated farther from the axis of rotation, the rotational inertia is greater. For rotational motion, the mass of an object can not be considered as concentrated at its center of mass.
+
+EXAMPLE 8-9 Two weights on a bar: different axis, different $I$. Two small "weights," of mass 5.0 kg and 7.0 kg , are mounted 4.0 m apart on a light rod (whose mass can be ignored), as shown in Fig. 8-19. Calculate the moment of inertia of the system (a) when rotated about an axis halfway between the weights, Fig. 8-19a, and (b) when rotated about an axis 0.50 m to the left of the $5.0- kg$ mass (Fig. 8-19b).
+APPROACH In each case, the moment of inertia of the system is found by summing over the two parts using Eq. 8-13.
+SOLUTION (a) Both weights are the same distance, 2.0 m , from the axis of rotation. Thus
+$$\begin{aligned}
+I=\Sigma m r^{2} & =(5.0 kg)(2.0 m)^{2}+(7.0 kg)(2.0 m)^{2} \\
+& =20 kg \cdot m^{2}+28 kg \cdot m^{2}=48 kg \cdot m^{2}
+\end{aligned}$$
+(b) The $5.0- kg$ mass is now 0.50 m from the axis, and the $7.0- kg$ mass is 4.50 m from the axis. Then
+$$\begin{aligned}
+I=\Sigma m r^{2} & =(5.0 kg)(0.50 m)^{2}+(7.0 kg)(4.5 m)^{2} \\
+& =1.3 kg \cdot m^{2}+142 kg \cdot m^{2}=143 kg \cdot m^{2}
+\end{aligned}$$
+
+NOTE This Example illustrates two important points. First, the moment of inertia of a given system is different for different axes of rotation. Second, we see in part $(b)$ that mass close to the axis of rotation contributes little to the total moment of inertia; here, the $5.0- kg$ object contributed less than $1 \%$ to the total.
+
+NEWTON'S SECOND LAW FOR ROTATION
+![](https://cdn.mathpix.com/cropped/2025_03_16_e9aee2e2e549ea7a4407g-1.jpg?height=422&width=381&top_left_y=903&top_left_x=1558)
+
+FIGURE 8-18 A large-diameter cylinder has greater rotational inertia than one of smaller diameter but equal mass.
+
+FIGURE 8-19 Example 8-9:
+calculating the moment of inertia.
+![](https://cdn.mathpix.com/cropped/2025_03_16_e9aee2e2e549ea7a4407g-1.jpg?height=264&width=478&top_left_y=1689&top_left_x=1504)
+(a)
+![](https://cdn.mathpix.com/cropped/2025_03_16_e9aee2e2e549ea7a4407g-1.jpg?height=275&width=486&top_left_y=2009&top_left_x=1497)
+(b)
+
+CAUTION
+I depends on axis of rotation and on distribution of mass
+
+FIGURE 8-20 Moments of inertia for various objects of uniform composition, each with mass $M$.
+\begin{tabular}{|c|c|c|c|c|}
+\hline & Object & Location of axis & & Moment of inertia \\
+\hline (a) & Thin hoop, radius $R$ & Through center & ![](https://cdn.mathpix.com/cropped/2025_03_16_e9aee2e2e549ea7a4407g-2.jpg?height=155\&width=163\&top_left_y=205\&top_left_x=1337) & $M R^{2}$ \\
+\hline (b) & Thin hoop, radius $R$ width $w$ & Through central diameter & ![](https://cdn.mathpix.com/cropped/2025_03_16_e9aee2e2e549ea7a4407g-2.jpg?height=220\&width=144\&top_left_y=385\&top_left_x=1345) & $\frac{1}{2} M R^{2}+\frac{1}{12} M w^{2}$ \\
+\hline (c) & Solid cylinder, radius $R$ & Through center & ![](https://cdn.mathpix.com/cropped/2025_03_16_e9aee2e2e549ea7a4407g-2.jpg?height=220\&width=163\&top_left_y=599\&top_left_x=1337) & $\frac{1}{2} M R^{2}$ \\
+\hline (d) & Hollow cylinder, inner radius $R_{1}$ outer radius $R_{2}$ & Through center & ![](https://cdn.mathpix.com/cropped/2025_03_16_e9aee2e2e549ea7a4407g-2.jpg?height=163\&width=199\&top_left_y=818\&top_left_x=1303) & $\frac{1}{2} M\left(R_{1}^{2}+R_{2}^{2}\right)$ \\
+\hline (e) & Uniform sphere, radius $R$ & Through center & ![](https://cdn.mathpix.com/cropped/2025_03_16_e9aee2e2e549ea7a4407g-2.jpg?height=150\&width=158\&top_left_y=980\&top_left_x=1342) & ${ }_{5}^{2} M R^{2}$ \\
+\hline (f) & Long uniform rod, length $\ell$ & Through center & $$\underset{\ell \longrightarrow 1}{\stackrel{\text { Axis }}{\longrightarrow}}$$ & $\frac{1}{12} M \ell^{2}$ \\
+\hline (g) & Long uniform rod, length $\ell$ & Through end & $$\stackrel{\text { Axis }}{\longrightarrow}$$ & ${ }_{3}^{1} M \ell^{2}$ \\
+\hline (h) & Rectangular thin plate, length $\ell$, width $w$ & Through center & ![](https://cdn.mathpix.com/cropped/2025_03_16_e9aee2e2e549ea7a4407g-2.jpg?height=168\&width=205\&top_left_y=1484\&top_left_x=1321) & $\frac{1}{12} M\left(\ell^{2}+w^{2}\right)$ \\
+\hline
+\end{tabular}
+
+For most ordinary objects, the mass is distributed continuously, and the calculation of the moment of inertia, $\Sigma m r^{2}$, can be difficult. Expressions can, however, be worked out (using calculus) for the moments of inertia of regularly shaped objects in terms of the dimensions of the objects. Figure 8-20 gives these expressions for a number of solids rotated about the axes specified. The only one for which the result is obvious is that for the thin hoop or ring rotated about an axis passing through its center perpendicular to the plane of the hoop (Fig. 8-20a). For a hoop, all the mass is concentrated at the same distance from the axis, $R$. Thus $\Sigma m r^{2}=(\Sigma m) R^{2}=M R^{2}$, where $M$ is the total mass of the hoop. In Fig. 8-20, we use capital $R$ to refer to the outer radius of an object (in (d) also the inner radius).
+
+When calculation is difficult, $I$ can be determined experimentally by measuring the angular acceleration $\alpha$ about a fixed axis due to a known net torque, $\Sigma \tau$, and applying Newton's second law, $I=\Sigma \tau / \alpha$, Eq. $8-14$.
+
+\section*{8-6 Solving Problems in Rotational Dynamics}
+
+When working with torque and angular acceleration (Eq. 8-14), it is important to use a consistent set of units, which in SI is: $\alpha$ in $rad / s ^{2} ; \tau$ in $m \cdot N$; and the moment of inertia, $I$, in $kg \cdot m ^{2}$.
+
+\section*{Rotational Motion}
+1. As always, draw a clear and complete diagram.
+2. Choose the object or objects that will be the system to be studied.
+3. Draw a free-body diagram for the object under consideration (or for each object, if more than one), showing all (and only) the forces acting on that object and exactly where they act, so you can determine the torque due to each. Gravity acts at the CM of the object (Section 7-8).
+4. Identify the axis of rotation and determine the torques about it. Choose positive and negative
+directions of rotation (counterclockwise and clockwise), and assign the correct sign to each torque.
+5. Apply Newton's second law for rotation, $\Sigma \tau=I \alpha$. If the moment of inertia is not given, and it is not the unknown sought, you need to determine it first. Use consistent units, which in SI are: $\alpha$ in $rad / s ^{2}$; $\tau$ in $m \cdot N$; and $I$ in $kg \cdot m ^{2}$.
+6. Also apply Newton's second law for translation, $\Sigma \overrightarrow{ F }=m \overrightarrow{ a }$, and other laws or principles as needed.
+7. Solve the resulting equation(s) for the unknown(s).
+8. Do a rough estimate to determine if your answer is reasonable.
+
+EXAMPLE 8-10 A heavy pulley. A 15.0-N force (represented by $\overrightarrow{ F }_{ T }$ ) is applied to a cord wrapped around a pulley of mass $M=4.00 kg$ and radius $R=33.0 cm$, Fig. 8-21. The pulley accelerates uniformly from rest to an angular speed of $30.0 rad / s$ in 3.00 s . If there is a frictional torque $\tau_{ fr }=1.10 m \cdot N$ at the axle, determine the moment of inertia of the pulley. The pulley rotates about its center.
+APPROACH We follow the steps of the Problem Solving Strategy above.
+SOLUTION
+1. Draw a diagram. The pulley and the attached cord are shown in Fig. 8-21.
+2. Choose the system: the pulley.
+3. Draw a free-body diagram. The force that the cord exerts on the pulley is shown as $\overrightarrow{ F }_{ T }$ in Fig. 8-21. The friction force acts all around the axle, retarding the motion, as suggested by $\overrightarrow{ F }_{ fr }$ in Fig. 8-21. We are given only its torque, which is what we need. Two other forces could be included in the diagram: the force of gravity $m g$ down and whatever force keeps the axle in place (they balance each other). They do not contribute to the torque (their lever arms are zero) and so we omit them to keep our diagram simple.
+4. Determine the torques. The cord exerts a force $\overrightarrow{ F }_{ T }$ that acts at the edge of the pulley, so its lever arm is $R$. The torque exerted by the cord equals $R F_{ T }$ and is counterclockwise, which we choose to be positive. The frictional torque is given as $\tau_{ fr }=1.10 m \cdot N$; it opposes the motion and is negative.
+5. Apply Newton's second law for rotation. The net torque is
+$$\Sigma \tau=R F_{T}-\tau_{fr}=(0.330 m)(15.0 N)-1.10 m \cdot N=3.85 m \cdot N$$
+
+The angular acceleration $\alpha$ is found from the given data that it takes 3.00 s to accelerate the pulley from rest to $\omega=30.0 rad / s$ :
+$$\alpha=\frac{\Delta \omega}{\Delta t}=\frac{30.0 rad / s-0}{3.00 s}=10.0 rad / s^{2} .$$
+
+Newton's second law, $\Sigma \tau=I \alpha$, can be solved for $I$ which is the unknown: $I=\Sigma \tau / \alpha$.
+6. Other calculations: None needed.
+7. Solve for unknowns. From Newton's second law,
+$$I=\frac{\Sigma \tau}{\alpha}=\frac{3.85 m \cdot N}{10.0 rad / s^{2}}=0.385 kg \cdot m^{2}$$
+8. Do a rough estimate. We can do a rough estimate of the moment of inertia by assuming the pulley is a uniform cylinder and using Fig. 8-20c:
+$$I \approx \frac{1}{2} M R^{2}=\frac{1}{2}(4.00 kg)(0.330 m)^{2}=0.218 kg \cdot m^{2}$$
+
+This is the same order of magnitude as our result, but numerically somewhat less. This makes sense, though, because a pulley is not usually a uniform cylinder but instead has more of its mass concentrated toward the outside edge. Such a pulley would be expected to have a greater moment of inertia than a solid cylinder of equal mass. A thin hoop, Fig. 8-20a, ought to have a greater $I$ than our pulley, and indeed it does: $I=M R^{2}=0.436 kg \cdot m ^{2}$.
+![](https://cdn.mathpix.com/cropped/2025_03_16_e9aee2e2e549ea7a4407g-3.jpg?height=413&width=335&top_left_y=777&top_left_x=1578)
+
+FIGURE 8-21 Example 8-10.
+
+\footnotetext{
+PROBLEMSOLVING Usefulness and power of rough estimates
+}
+![](https://cdn.mathpix.com/cropped/2025_03_16_e9aee2e2e549ea7a4407g-4.jpg?height=1127&width=485&top_left_y=174&top_left_x=126)
+
+FIGURE 8-22 Example 8-11. (a) Pulley and falling bucket of mass $m$. This is also the free-body diagram for the pulley. (b) Freebody diagram for the bucket.
+
+Additional Example—a bit more challenging
+EXAMPLE 8-11 Pulley and bucket. Consider again the pulley in Example 8-10. But instead of a constant $15.0- N$ force being exerted on the cord, we now have a bucket of weight $w=15.0 N$ (mass $m=w / g=1.53 kg$ ) hanging from the cord. See Fig. 8-22a. We assume the cord has negligible mass and does not stretch or slip on the pulley. Calculate the angular acceleration $\alpha$ of the pulley and the linear acceleration $a$ of the bucket. Assume the same frictional torque $\tau_{ fr }=1.10 m \cdot N$ acts. APPROACH This situation looks a lot like Example 8-10, Fig. 8-21. But there is a big difference: the tension in the cord is now an unknown, and it is no longer equal to the weight of the bucket if the bucket accelerates. Our system has two parts: the bucket, which can undergo translational motion (Fig. 8-22b is its freebody diagram); and the pulley. The pulley does not translate, but it can rotate. We apply the rotational version of Newton's second law to the pulley, $\Sigma \tau=I \alpha$, and the linear version to the bucket, $\Sigma F=m a$.
+SOLUTION Let $F_{ T }$ be the tension in the cord. Then a force $F_{ T }$ acts at the edge of the pulley, and we apply Newton's second law, Eq. 8-14, for the rotation of the pulley:
+$$I \alpha=\Sigma \tau=R F_{T}-\tau_{fr} \quad \quad[\text { pulley }]$$
+
+Next we look at the (linear) motion of the bucket of mass $m$. Figure 8-22b, the free-body diagram for the bucket, shows that two forces act on the bucket: the force of gravity $m g$ acts downward, and the tension of the cord $F_{ T }$ pulls upward. Applying Newton's second law, $\Sigma F=m a$, for the bucket, we have (taking downward as positive):
+$$m g-F_{T}=m a . \quad[\text { bucket }]$$
+
+Note that the tension $F_{ T }$, which is the force exerted on the edge of the pulley, is not equal to the weight of the bucket $(=m g=15.0 N)$. There must be a net force on the bucket if it is accelerating, so $F_{ T }<m g$. We can also see this from the last equation above, $F_{ T }=m g-m a$.
+
+To obtain $\alpha$, we note that the tangential acceleration of a point on the edge of the pulley is the same as the acceleration of the bucket if the cord doesn't stretch or slip. Hence we can use Eq. 8-5, $a_{\tan }=a=R \alpha$. Substituting $F_{ T }=m g-m a=m g-m R \alpha$ into the first equation above (Newton's second law for rotation of the pulley), we obtain
+$$I \alpha=\Sigma \tau=R F_{T}-\tau_{fr}=R(m g-m R \alpha)-\tau_{fr}=m g R-m R^{2} \alpha-\tau_{fr}$$
+
+The unknown $\alpha$ appears on the left and in the second term on the far right, so we bring that term to the left side and solve for $\alpha$ :
+$$\alpha=\frac{m g R-\tau_{fr}}{I+m R^{2}}$$
+
+The numerator $\left(m g R-\tau_{ fr }\right)$ is the net torque, and the denominator $\left(I+m R^{2}\right)$ is the total rotational inertia of the system. With $m g=15.0 N \quad(m=1.53 kg)$ and, from Example $8-10, I=0.385 kg \cdot m ^{2}$ and $\tau_{ fr }=1.10 m \cdot N$, then
+$$\alpha=\frac{(15.0 N)(0.330 m)-1.10 m \cdot N}{0.385 kg \cdot m^{2}+(1.53 kg)(0.330 m)^{2}}=6.98 rad / s^{2} .$$
+
+The angular acceleration is somewhat less in this case than the $10.0 rad / s ^{2}$ of Example $8-10$. Why? Because $F_{ T }(=m g-m a=15.0 N-m a)$ is less than the $15.0- N$ force in Example 8-10. The linear acceleration of the bucket is
+$$a=R \alpha=(0.330 m)\left(6.98 rad / s^{2}\right)=2.30 m / s^{2}$$
+
+NOTE The tension in the cord $F_{ T }$ is less than $m g$ because the bucket accelerates.
+
+\section*{8-7 Rotational Kinetic Energy}
+
+The quantity $\frac{1}{2} m v^{2}$ is the kinetic energy of an object undergoing translational motion. An object rotating about an axis is said to have rotational kinetic energy. By analogy with translational kinetic energy, we might expect this to be given by the expression $\frac{1}{2} I \omega^{2}$, where $I$ is the moment of inertia of the object and $\omega$ is its angular velocity. We can indeed show that this is true.
+
+Consider any rigid rotating object as made up of many tiny particles, each of mass $m$. If we let $r$ represent the distance of any one particle from the axis of rotation, then its linear velocity is $v=r \omega$. The total kinetic energy of the whole object will be the sum of the kinetic energies of all its particles:
+$$\begin{aligned}
+KE=\Sigma\left(\frac{1}{2} m v^{2}\right) & =\Sigma\left(\frac{1}{2} m r^{2} \omega^{2}\right) \\
+& =\frac{1}{2}\left(\sum m r^{2}\right) \omega^{2} .
+\end{aligned}$$
+
+We have factored out the $\frac{1}{2}$ and the $\omega^{2}$ since they are the same for every particle of a rigid object. Since $\Sigma m r^{2}=I$, the moment of inertia, we see that the kinetic energy of a rigid rotating object is
+$$\text { rotational KE }=\frac{1}{2} I \omega^{2} .$$
+
+The units are joules, as with all other forms of energy.
+An object that rotates while its center of mass (CM) undergoes translational motion will have both translational and rotational kinetic energy. Equation 8-15 gives the rotational kinetic energy if the rotation axis is fixed. If the object is moving, such as a wheel rolling down a hill, this equation is still valid as long as the rotation axis is fixed in direction. Then the total kinetic energy is
+$$KE=\frac{1}{2} M v_{CM}^{2}+\frac{1}{2} I_{CM} \omega^{2},$$
+where $v_{ CM }$ is the linear velocity of the center of mass, $I_{ CM }$ is the moment of inertia about an axis through the center of mass, $\omega$ is the angular velocity about this axis, and $M$ is the total mass of the object.
+
+EXAMPLE 8-12 Sphere rolling down an incline. What will be the speed of a solid sphere of mass $M$ and radius $R$ when it reaches the bottom of an incline if it starts from rest at a vertical height $H$ and rolls without slipping? See Fig. 8-23. (Assume sufficient static friction so no slipping occurs: we will see shortly that static friction does no work.) Compare your result to that for an object sliding down a frictionless incline.
+APPROACH We use the law of conservation of energy with gravitational potential energy, now including rotational kinetic energy as well as translational ке.
+SOLUTION The total energy at any point a vertical distance $y$ above the base of the incline is
+$$E=\frac{1}{2} M v^{2}+\frac{1}{2} I_{CM} \omega^{2}+M g y,$$
+where $v$ is the speed of the center of mass, and $M g y$ is the gravitational potential energy. Applying conservation of energy, we equate the total energy at the top $(y=H, v=0, \omega=0)$ to the total energy at the bottom $(y=0)$ :
+$$\begin{aligned}
+E_{top} & =E_{bottom} \\
+0+0+M g H & =\frac{1}{2} M v^{2}+\frac{1}{2} I_{CM} \omega^{2}+0
+\end{aligned}$$
+[energy conservation]
+The moment of inertia of a solid sphere about an axis through its center of mass is $I_{ CM }=\frac{2}{5} M R^{2}$, Fig. 8-20e. Since the sphere rolls without slipping, we have $\omega=v / R$ (recall Fig. 8-8). Hence
+$$M g H=\frac{1}{2} M v^{2}+\frac{1}{2}\left(\frac{2}{5} M R^{2}\right)\left(\frac{v^{2}}{R^{2}}\right)$$
+
+Canceling the $M$ 's and $R$ 's, we obtain
+$$\left(\frac{1}{2}+\frac{1}{5}\right) v^{2}=g H$$
+or
+$$v=\sqrt{\frac{10}{7} g H}$$
+[rolling sphere]
+We can compare this result for the speed of a rolling sphere to that for an object sliding down a plane without rotating and without friction, $\frac{1}{2} m v^{2}=m g H$ (see our energy conservation equation above, removing the rotational term). For the sliding object, $v=\sqrt{2 g H}$, which is greater than our result for a rolling sphere $(2>10 / 7)$. An object sliding without friction or rotation transforms its initial potential energy entirely into translational kinetic energy (none into rotational kinetic energy), so the speed of its center of mass is greater.
+NOTE Our result for the rolling sphere shows (perhaps surprisingly) that $v$ is independent of both the mass $M$ and the radius $R$ of the sphere.
+![](https://cdn.mathpix.com/cropped/2025_03_16_e9aee2e2e549ea7a4407g-5.jpg?height=277&width=570&top_left_y=1000&top_left_x=1471)
+
+FIGURE 8-23 A sphere rolling down a hill has both translational and rotational kinetic energy. Example 8-12.
+
+\section*{PROBLEM SOLVING}
+
+Rotational energy adds to other forms of energy to get the total energy which is conserved
+![](https://cdn.mathpix.com/cropped/2025_03_16_e9aee2e2e549ea7a4407g-6.jpg?height=262&width=559&top_left_y=823&top_left_x=81)
+
+FIGURE 8-24 Example 8-13.
+
+FIGURE 8-25 A sphere rolling to the right on a plane surface. The point in contact with the ground at any moment, point P , is momentarily at rest. Point A to the left of P is moving nearly vertically upward at the instant shown, and point B to the right is moving nearly vertically downward. An instant later, point B will touch the plane and be at rest momentarily. Thus no work is done by the force of static friction.
+![](https://cdn.mathpix.com/cropped/2025_03_16_e9aee2e2e549ea7a4407g-6.jpg?height=221&width=520&top_left_y=1665&top_left_x=109)
+
+FIGURE 8-26 Torque $\tau=r F$ does work when rotating a wheel equal to $W=F \Delta \ell=F r \Delta \theta=\tau \Delta \theta$.
+![](https://cdn.mathpix.com/cropped/2025_03_16_e9aee2e2e549ea7a4407g-6.jpg?height=410&width=472&top_left_y=2099&top_left_x=138)
+
+CHAPTER 8
+
+CONCEPTUAL EXAMPLE 8-13 Which is fastest? Several objects roll without slipping down an incline of vertical height $H$, all starting from rest at the same moment. The objects are a thin hoop (or a plain wedding band), a spherical marble, a solid cylinder (a D-cell battery), and an empty soup can. In addition, a greased box slides down without friction. In what order do they reach the bottom of the incline?
+
+RESPONSE We use conservation of energy with gravitational potential energy plus rotational and translational kinetic energy. The sliding box would be fastest because the potential energy loss $(M g H)$ is transformed completely into translational kinetic energy of the box, whereas for rolling objects the initial potential energy is shared between translational and rotational kinetic energies, and so the speed of the cm is less. For each of the rolling objects we can state that the decrease in potential energy equals the increase in translational plus rotational kinetic energy:
+$$M g H=\frac{1}{2} M v^{2}+\frac{1}{2} I_{CM} \omega^{2}$$
+
+For all our rolling objects, the moment of inertia $I_{ CM }$ is a numerical factor times the mass $M$ and the radius $R^{2}$ (Fig. $8-20$ ). The mass $M$ is in each term, so the translational speed $v$ doesn't depend on $M$; nor does it depend on the radius $R$ since $\omega=v / R$, so $R^{2}$ cancels out for all the rolling objects. Thus the speed $v$ at the bottom of the incline depends only on that numerical factor in $I_{ CM }$ which expresses how the mass is distributed. The hoop, with all its mass concentrated at radius $R\left(I_{ CM }=M R^{2}\right)$, has the largest moment of inertia; hence it will have the lowest speed and will arrive at the bottom behind the D-cell $\left(I_{ CM }=\frac{1}{2} M R^{2}\right)$, which in turn will be behind the marble $\left(I_{ CM }=\frac{2}{5} M R^{2}\right)$. The empty can, which is mainly a hoop plus a thin disk, has most of its mass concentrated at $R$; so it will be a bit faster than the pure hoop but slower than the D-cell. See Fig. 8-24.
+NOTE The rolling objects do not even have to have the same radius: the speed at the bottom does not depend on the object's mass $M$ or radius $R$, but only on the shape (and the height of the incline $H$ ).
+
+If there had been little or no static friction between the rolling objects and the plane in these Examples, the round objects would have slid rather than rolled, or a combination of both. Static friction must be present to make a round object roll. We did not need to take friction into account in the energy equation for the rolling objects because it is static friction and does no work-the point of contact of a sphere at each instant does not slide, but moves perpendicular to the plane (first down and then up as shown in Fig. 8-25) as it rolls. Thus, no work is done by the static friction force because the force and the motion (displacement) are perpendicular. The reason the rolling objects in Examples 8-12 and 8-13 move down the slope more slowly than if they were sliding is not because friction slows them down. Rather, it is because some of the gravitional potential energy is converted to rotational kinetic energy, leaving less for the translational kinetic energy.
+
+EXERCISE C Return to the Chapter-Opening Question, page 198, and answer it again now. Try to explain why you may have answered differently the first time.
+
+\section*{Work Done by Torque}
+
+The work done on an object rotating about a fixed axis, such as the pulleys in Figs. $8-21$ and $8-22$, can be written using angular quantities. As shown in Fig. 8-26, a force $F$ exerting a torque $\tau=r F$ on a wheel does work $W=F \Delta \ell$ in rotating the wheel a small distance $\Delta \ell$ at the point of application of $\overrightarrow{ F }$. The wheel has rotated through a small angle $\Delta \theta=\Delta \ell / r$ (Eq. $8-1$ ). Hence
+$$W=F \Delta \ell=F r \Delta \theta$$
+
+Because $\tau=r F$, then
+$$W=\tau \Delta \theta$$
+is the work done by the torque $\tau$ when rotating the wheel through an angle $\Delta \theta$. Finally, power $P$ is the rate work is done:
+$$P=W / \Delta t=\tau \Delta \theta / \Delta t=\tau \omega$$
+which is analogous to the translational version, $P=F v$ (see Eq. 6-18).
+
+\section*{8-8 Angular Momentum and Its Conservation}
+
+Throughout this Chapter we have seen that if we use the appropriate angular variables, the kinematic and dynamic equations for rotational motion are analogous to those for ordinary linear motion. We saw in the previous Section, for example, that rotational kinetic energy can be written as $\frac{1}{2} I \omega^{2}$, which is analogous to the translational kinetic energy, $\frac{1}{2} m v^{2}$. In like manner, the linear momentum, $p=m v$, has a rotational analog. It is called angular momentum, $L$. For a symmetrical object rotating about a fixed axis through the CM , the angular momentum is
+$$L=I \omega$$
+where $I$ is the moment of inertia and $\omega$ is the angular velocity about the axis of rotation. The SI units for $L$ are $kg \cdot m ^{2} / s$, which has no special name.
+
+We saw in Chapter 7 (Section 7-1) that Newton's second law can be written not only as $\Sigma F=m a$ but also more generally in terms of momentum (Eq. 7-2), $\Sigma F=\Delta p / \Delta t$. In a similar way, the rotational equivalent of Newton's second law, which we saw in Eq. $8-14$ can be written as $\Sigma \tau=I \alpha$, can also be written in terms of angular momentum:
+$$\Sigma \tau=\frac{\Delta L}{\Delta t}$$
+where $\Sigma \tau$ is the net torque acting to rotate the object, and $\Delta L$ is the change in angular momentum in a time interval $\Delta t$. Equation $8-14, \Sigma \tau=I \alpha$, is a special case of Eq. 8-19 when the moment of inertia is constant. This can be seen as follows. If an object has angular velocity $\omega_{0}$ at time $t=0$, and angular velocity $\omega$ after a time interval $\Delta t$, then its angular acceleration (Eq. 8-3) is
+$$\alpha=\frac{\Delta \omega}{\Delta t}=\frac{\omega-\omega_{0}}{\Delta t} .$$
+
+Then from Eq. 8-19, we have
+$$\Sigma \tau=\frac{\Delta L}{\Delta t}=\frac{I \omega-I \omega_{0}}{\Delta t}=\frac{I\left(\omega-\omega_{0}\right)}{\Delta t}=I \frac{\Delta \omega}{\Delta t}=I \alpha$$
+which is Eq. 8-14.
+Angular momentum is an important concept in physics because, under certain conditions, it is a conserved quantity. We can see from Eq. 8-19 that if the net torque $\Sigma \tau$ on an object is zero, then $\Delta L / \Delta t$ equals zero. That is, $\Delta L=0$, so $L$ does not change. This is the law of conservation of angular momentum for a rotating object:
+
+\section*{The total angular momentum of a rotating object remains constant if the net torque acting on it is zero.}
+
+CONSERVATION OF ANGULAR MOMENTUM
+
+The law of conservation of angular momentum is one of the great conservation laws of physics, along with those for energy and linear momentum.
+
+When there is zero net torque acting on an object, and the object is rotating about a fixed axis or about an axis through its center of mass whose direction doesn't change, we can write
+$$I \omega=I_{0} \omega_{0}=\text { constant. }$$
+$I_{0}$ and $\omega_{0}$ are the moment of inertia and angular velocity, respectively, about that axis at some initial time $(t=0)$, and $I$ and $\omega$ are their values at some other time. The parts of the object may alter their positions relative to one another, so that $I$ changes. But then $\omega$ changes as well, so that the product $I \omega$ remains constant.
+
+NEWTON'S SECOND LAW FOR ROTATION
+![](https://cdn.mathpix.com/cropped/2025_03_16_e9aee2e2e549ea7a4407g-8.jpg?height=541&width=524&top_left_y=109&top_left_x=107)
+
+FIGURE 8-27 A skater spinning on ice, illustrating conservation of angular momentum: (a) $I$ is large and $\omega$ is small; (b) $I$ is smaller so $\omega$ is larger.
+
+FIGURE 8-28 A diver rotates faster when arms and legs are tucked in than when they are outstretched. Angular momentum is conserved.
+![](https://cdn.mathpix.com/cropped/2025_03_16_e9aee2e2e549ea7a4407g-8.jpg?height=494&width=451&top_left_y=1019&top_left_x=146)
+
+FIGURE 8-29 Example 8-14.
+![](https://cdn.mathpix.com/cropped/2025_03_16_e9aee2e2e549ea7a4407g-8.jpg?height=348&width=334&top_left_y=1645&top_left_x=207)
+
+Many interesting phenomena can be understood on the basis of conservation of angular momentum. Consider a skater doing a spin on the tips of her skates, Fig. 8-27. She rotates at a relatively low speed when her arms are outstretched; when she brings her arms in close to her body, she suddenly spins much faster. From the definition of moment of inertia, $I=\Sigma m r^{2}$, it is clear that when she pulls her arms in closer to the axis of rotation, $r$ is reduced for the arms so her moment of inertia is reduced. Since the angular momentum $I \omega$ remains constant (we ignore the small torque due to friction), if $I$ decreases, then the angular velocity $\omega$ must increase. If the skater reduces her moment of inertia by a factor of 2 , she will then rotate with twice the angular velocity.
+
+EXERCISE D When a spinning figure skater pulls in her arms, her moment of inertia decreases; to conserve angular momentum, her angular velocity increases. Does her rotational kinetic energy also increase? If so, where does the energy come from?
+
+A similar example is the diver shown in Fig. 8-28. The push as she leaves the board gives her an initial angular momentum about her center of mass. When she curls herself into the tuck position, she rotates quickly one or more times. She then stretches out again, increasing her moment of inertia which reduces the angular velocity to a small value, and then she enters the water. The change in moment of inertia from the straight position to the tuck position can be a factor of as much as $3 \frac{1}{2}$.
+
+Note that for angular momentum to be conserved, the net torque must be zero; but the net force does not necessarily have to be zero. The net force on the diver in Fig. 8-28, for example, is not zero (gravity is acting), but the net torque about her CM is zero because the force of gravity acts at her center of mass.
+
+EXAMPLE 8-14 Clutch. A simple clutch consists of two cylindrical plates that can be pressed together to connect two sections of an axle, as needed, in a piece of machinery. The two plates have masses $M_{ A }=6.0 kg$ and $M_{ B }=9.0 kg$, with equal radii $R=0.60 m$. They are initially separated (Fig. 8-29). Plate $M_{ A }$ is accelerated from rest to an angular velocity $\omega_{1}=7.2 rad / s$ in time $\Delta t=2.0 s$. Calculate $(a)$ the angular momentum of $M_{ A }$, and $(b)$ the torque required to accelerate $M_{ A }$ from rest to $\omega_{1}$. (c) Next, plate $M_{ B }$, initially at rest but free to rotate without friction, is placed in firm contact with freely rotating plate $M_{ A }$, and the two plates then both rotate at a constant angular velocity $\omega_{2}$, which is considerably less than $\omega_{1}$. Why does this happen, and what is $\omega_{2}$ ?
+APPROACH We use angular momentum, $L=I \omega$ (Eq. 8-18), plus Newton's second law for rotation, Eq. 8-19.
+SOLUTION (a) The angular momentum of $M_{ A }$, a cylinder, is
+$$L_{A}=I_{A} \omega_{1}=\frac{1}{2} M_{A} R^{2} \omega_{1}=\frac{1}{2}(6.0 kg)(0.60 m)^{2}(7.2 rad / s)=7.8 kg \cdot m^{2} / s$$
+(b) The plate started from rest so the torque, assumed constant, was
+$$\tau=\frac{\Delta L}{\Delta t}=\frac{7.8 kg \cdot m^{2} / s-0}{2.0 s}=3.9 m \cdot N .$$
+(c) Initially, before contact, $M_{ A }$ is rotating at constant $\omega_{1}$ (we ignore friction). When plate B comes in contact, why is their joint rotation speed less? You might think in terms of the torque each exerts on the other upon contact. But quantitatively, it's easier to use conservation of angular momentum, Eq. 8-20, since no external torques are assumed to act. Thus
+$$\begin{aligned}
+& \text { angular momentum before }=\text { angular momentum after } \\
+& \qquad I_{A} \omega_{1}=\left(I_{A}+I_{B}\right) \omega_{2} .
+\end{aligned}$$
+
+Solving for $\omega_{2}$ we find (after cancelling factors of $R^{2}$ )
+$$\omega_{2}=\left(\frac{I_{A}}{I_{A}+I_{B}}\right) \omega_{1}=\left(\frac{M_{A}}{M_{A}+M_{B}}\right) \omega_{1}=\left(\frac{6.0 kg}{15.0 kg}\right)(7.2 rad / s)=2.9 rad / s$$

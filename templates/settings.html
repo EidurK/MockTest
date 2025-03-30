@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Settings</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Brand</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/myfiles">My files</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/upload">Upload a file</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/test">My tests</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/settings">Settings</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <form action="/settings" method="post">
+        <label for="app_id">App ID:</label>
+        <input type="text" id="app_id" name="app_id" value="{{ app_id if app_id else '' }}" placeholder="set app id">
+        <br>
+        <label for="app_key">App Key:</label>
+        <input type="text" id="app_key" name="app_key" value="{{ app_key if app_key else '' }}" placeholder="set app key">
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
